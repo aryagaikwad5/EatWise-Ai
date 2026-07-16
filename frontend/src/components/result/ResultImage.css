@@ -1,0 +1,79 @@
+.image-card{
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    animation:fadeUp .7s ease;
+
+}
+
+.image-card h2{
+
+    color:#17324d;
+
+    margin-bottom:25px;
+
+}
+
+.image-card img{
+
+    width:280px;
+
+    max-width:100%;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.image-card img:hover{
+
+    transform:scale(1.04);
+
+}
+
+.image-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:25px;
+
+    font-weight:700;
+
+    color:#475569;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

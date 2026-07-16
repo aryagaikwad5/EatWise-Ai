@@ -1,0 +1,33 @@
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    margin:50px 0 20px;
+}
+
+.analyze-btn{
+    background:#22c55e;
+    color:#fff;
+
+    border:none;
+    border-radius:12px;
+
+    padding:14px 32px;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+    box-shadow:0 10px 25px rgba(34,197,94,.25);
+}
+
+.analyze-btn:hover{
+    background:#16a34a;
+    transform:translateY(-3px);
+    box-shadow:0 14px 30px rgba(34,197,94,.35);
+}
+
+.analyze-btn:active{
+    transform:scale(.98);
+}

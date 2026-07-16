@@ -1,0 +1,8 @@
+CLASS_NAMES = [
+    "Fresh Apple",
+    "Fresh Banana",
+    "Fresh Orange",
+    "Rotten Apple",
+    "Rotten Banana",
+    "Rotten Orange"
+]

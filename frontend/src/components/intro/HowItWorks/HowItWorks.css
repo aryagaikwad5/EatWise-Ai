@@ -1,0 +1,280 @@
+.how{
+    padding:120px 8%;
+    text-align:center;
+}
+
+.how h2{
+    font-size:3rem;
+    font-weight:800;
+    margin:20px 0;
+    color:#0f172a;
+}
+
+.how h2 span{
+    color:#16a34a;
+}
+
+.how>p{
+    max-width:720px;
+    margin:auto;
+    color:#555;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.timeline{
+    margin-top:80px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+}
+
+.step-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:28px;
+
+    padding:45px 30px;
+
+    transition:all .45s ease;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.step-card:hover{
+
+    transform:translateY(-18px) scale(1.04);
+
+    background:rgba(255,255,255,.9);
+
+    border:1px solid rgba(34,197,94,.35);
+
+    box-shadow:
+        0 25px 60px rgba(34,197,94,.25),
+        0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.step-card h3{
+
+    transition:.35s ease;
+
+}
+
+.step-card:hover h3{
+
+    color:#16a34a;
+
+}
+
+.step-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:22px;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    transition:.4s;
+
+}
+
+.step-card:hover .step-number{
+
+transform:rotate(360deg);
+
+background:#15803d;
+
+}
+
+.step-icon{
+
+    font-size:58px;
+
+    margin-bottom:22px;
+
+    transition:.45s;
+
+}
+
+.step-card:hover .step-icon{
+
+    transform:
+    scale(1.18)
+    rotate(12deg);
+
+}
+
+.step-card h3{
+
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+
+    color:#111827;
+
+}
+
+.step-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    transition:.35s ease;
+
+}
+
+.step-card:hover p{
+
+    color:#444;
+
+}
+
+.step-card{
+
+cursor:pointer;
+
+}
+
+.step-card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.step-card::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+border-radius:28px;
+
+border:2px solid transparent;
+
+transition:.35s ease;
+
+pointer-events:none;
+
+}
+
+.step-card:hover::after{
+
+border-color:rgba(34,197,94,.35);
+
+}
+
+@media(max-width:768px){
+
+.how{
+
+padding:80px 6%;
+
+}
+
+.how h2{
+
+font-size:2.2rem;
+
+}
+
+}
+
+.step-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.45),
+
+transparent
+
+);
+
+transition:.8s;
+
+}
+
+.step-card:hover::before{
+
+left:120%;
+
+}
+
+.step-card::after{
+
+content:"";
+
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+height:5px;
+
+background:#22c55e;
+
+transform:scaleX(0);
+
+transition:.4s;
+
+}
+
+.step-card:hover::after{
+
+transform:scaleX(1);
+
+}

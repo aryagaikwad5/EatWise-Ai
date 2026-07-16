@@ -1,0 +1,75 @@
+.recommendation-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    margin:30px 0;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.recommendation-card h2{
+
+    font-size:1.8rem;
+
+    color:#16213d;
+
+    margin-bottom:20px;
+
+}
+
+.insight-status{
+
+    background:#eafaf0;
+
+    border-left:5px solid #22c55e;
+
+    padding:16px 20px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+    color:#15803d;
+
+    margin-bottom:20px;
+
+}
+
+.insight-status span{
+
+    color:#16213d;
+
+}
+
+.insight-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.insight-list li{
+
+    padding:14px 0;
+
+    border-bottom:1px solid #edf2f7;
+
+    color:#475569;
+
+    font-size:1rem;
+
+}
+
+.insight-list li:last-child{
+
+    border:none;
+
+}

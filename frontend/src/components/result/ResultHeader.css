@@ -1,0 +1,41 @@
+.header{
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.header span{
+
+background:#dff8da;
+
+padding:10px 22px;
+
+border-radius:40px;
+
+font-weight:700;
+
+color:#169a47;
+
+}
+
+.header h1{
+
+font-size:3rem;
+
+margin-top:25px;
+
+color:#17223c;
+
+}
+
+.header p{
+
+margin-top:12px;
+
+font-size:1.1rem;
+
+color:#667085;
+
+}

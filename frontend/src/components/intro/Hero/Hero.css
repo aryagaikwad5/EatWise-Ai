@@ -1,0 +1,106 @@
+.introHero{
+
+    min-height:65vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:100px 10%;
+
+    background:
+    radial-gradient(circle at 15% 20%, rgba(72,199,116,.20), transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(255,210,80,.12), transparent 45%),
+    linear-gradient(
+    120deg,
+    #C7EFC8 0%,
+    #DCF7DE 35%,
+    #EFFBF1 70%,
+    #FFF5DF 100%);
+
+}
+
+.introBadge{
+
+    padding:12px 26px;
+
+    background:#d9ffe2;
+
+    color:#16a34a;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.introHero h1{
+
+    font-size:4rem;
+
+    color:#111827;
+
+    margin-bottom:25px;
+
+    line-height:1.15;
+
+}
+
+.introHero p{
+
+    max-width:800px;
+
+    font-size:1.25rem;
+
+    color:#4b5563;
+
+    line-height:1.8;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.introHero h1{
+
+font-size:2.7rem;
+
+}
+
+.introHero p{
+
+font-size:1rem;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.introHero{
+
+padding:90px 25px;
+
+}
+
+.introHero h1{
+
+font-size:2rem;
+
+}
+
+.introBadge{
+
+font-size:.9rem;
+
+padding:10px 18px;
+
+}
+
+}
