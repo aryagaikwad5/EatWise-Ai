@@ -6,8 +6,10 @@
 
 .hero{
 
-    width:100vw;
+    width:100%;
     min-height:100vh;
+
+    padding:40px 20px;
 
     position:relative;
 
@@ -42,9 +44,9 @@
 
     z-index:20;
 
-    max-width:850px;
+    width:min(900px,95%);
 
-    width:100%;
+    max-width:900px;
 
     padding:0 20px;
 
@@ -188,56 +190,55 @@
 }
 
 .apple{
-width:200px;
+width:clamp(90px,12vw,200px);
 top:10%;
 left:20%;
 }
 
 .orange{
-width:270px;
+width:clamp(110px,15vw,270px);
 top:12%;
 right:16%;
 }
 
 .grapes{
-width:200px;
+width:clamp(90px,12vw,200px);
 top:5%;
 left:45%;
 }
 
 .mango{
-width:300px;
+width:clamp(120px,17vw,300px);
 left:18%;
 top:45%;
 }
 
 .banana{
-width:270px;
+width:clamp(110px,15vw,270px);
 bottom:8%;
 left:8%;
 }
 
 .kiwi{
-width:250px;
+width:clamp(100px,14vw,250px);
 bottom:6%;
 right:15%;
 }
 
 .pineapple{
-width:300px;
+width:clamp(130px,18vw,300px);
 right:4%;
 top:42%;
 }
 
 .strawberry{
-width:270px;
+width:clamp(100px,15vw,270px);
 right:22%;
 bottom:28%;
 }
 
-
 .pear{
-width:250px;
+width:clamp(100px,14vw,250px);
 bottom:50%;
 left:4%;
 }
@@ -258,27 +259,48 @@ transform:translateY(0px) rotate(0deg);
 
 }
 
-@media(max-width:768px){
+@media (max-width:1024px){
 
-    .fruit{
+.hero-content h1{
+font-size:4rem;
+}
 
-        width:70px;
-    }
+.hero-content h2{
+font-size:2.5rem;
+}
 
-    .hero-content{
+.hero-content p{
+font-size:1.1rem;
+}
 
-        width:95%;
-    }
+}
 
-    .hero p{
+@media (max-width:768px){
 
-        font-size:1rem;
-    }
+.fruit{
+opacity:.25;
+}
 
-    .explore-btn{
+.hero-content{
+z-index:100;
+}
 
-        padding:15px 35px;
-    }
+.hero-content h1{
+font-size:3rem;
+}
+
+.hero-content h2{
+font-size:2rem;
+}
+
+.hero-content p{
+font-size:1rem;
+}
+
+.explore-btn{
+padding:16px 35px;
+font-size:1rem;
+}
 
 }
 
