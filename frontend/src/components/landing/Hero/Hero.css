@@ -7,17 +7,18 @@
 .hero{
 
     width:100%;
-    min-height:100vh;
-
-    padding:40px 20px;
-
-    position:relative;
+    min-height:100svh;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+    position:relative;
+
+    padding:40px 20px;
 
     background:
         radial-gradient(circle at top left,
