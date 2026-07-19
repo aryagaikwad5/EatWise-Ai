@@ -124,3 +124,35 @@ height:130px;
 }
 
 }
+
+.fruit-card{
+
+    position:relative;
+
+}
+
+.coming-soon{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    background:#fff3cd;
+
+    color:#a16207;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:.4px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}

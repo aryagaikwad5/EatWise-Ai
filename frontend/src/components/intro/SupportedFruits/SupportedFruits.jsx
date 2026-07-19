@@ -13,37 +13,43 @@ const fruits = [
 {
 name:"Apple",
 img:apple,
-desc:"Rich in fiber and antioxidants."
+desc:"Rich in fiber and antioxidants.",
+supported:true
 },
 
 {
 name:"Banana",
 img:banana,
-desc:"High in potassium and energy."
+desc:"High in potassium and energy.",
+supported:true
 },
 
 {
 name:"Orange",
 img:orange,
-desc:"Excellent source of Vitamin C."
+desc:"Excellent source of Vitamin C.",
+supported:true
 },
 
 {
 name:"Mango",
 img:mango,
-desc:"Loaded with vitamins and minerals."
+desc:"Support Coming Soon",
+supported:false
 },
 
 {
 name:"Pineapple",
 img:pineapple,
-desc:"Supports digestion naturally."
+desc:"Support Coming Soon",
+supported:false
 },
 
 {
 name:"Kiwi",
 img:kiwi,
-desc:"Boosts immunity and heart health."
+desc:"Support Coming Soon",
+supported:false
 }
 
 ];
@@ -67,22 +73,22 @@ viewport={{once:true}}
 >
 
 <span className="section-tag">
-🍓 Supported Fruits
+   🍎 Currently Supported
 </span>
 
 <h2>
 
-AI Can Analyze
+Currently Supported
 
-<span> These Fruits</span>
+<span>  Fruits</span>
 
 </h2>
 
 <p>
-
-Upload any of these fruits and instantly receive freshness,
-nutrition and storage recommendations.
-
+  EatWise AI currently supports freshness analysis for
+  <strong> Apple, Banana and Orange.</strong>
+  <br />
+  Support for Mango, Pineapple and Kiwi is coming in future updates.
 </p>
 
 <div className="fruit-grid">
@@ -113,6 +119,13 @@ duration:.5
 viewport={{once:true}}
 
 >
+
+{
+!fruit.supported &&
+<span className="coming-soon">
+Coming Soon
+</span>
+}
 
 <img src={fruit.img} alt={fruit.name}/>
 
